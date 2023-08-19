@@ -1,2 +1,2 @@
 # Networkninja
-A wensite to grow my LinkedIn profile
+A website to grow my LinkedIn profile 
