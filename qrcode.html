@@ -33,7 +33,17 @@
   <div class="container px-5 py-10 mx-auto">
     <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
       <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-900">Feel free to initiate contact with me at your convenience; I welcome any questions, inquiries, or collaboration opportunities you may have.</h1>
-              <a href="https://www.linkedin.com/in/bhuvneshverma/"><button class="flex-shrink-0 text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg mt-10 sm:mt-0">CONNECT</button></a>
+      <button id="pdfButton" class="flex-shrink-0 text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg mt-10 sm:mt-0">GET QR</button>
+        
+              <script>
+              document.getElementById("pdfButton").addEventListener("click", function() {
+                  var githubPath = "./images/custom_qr_code.png";
+                  var link = document.createElement("a");
+                  link.href = githubPath;
+                  link.download = "QRcode.png";
+                  link.click();
+              });
+              </script>
     </div>
   </div>
 </section>
